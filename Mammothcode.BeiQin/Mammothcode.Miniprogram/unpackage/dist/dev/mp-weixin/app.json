@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/message/message",
+    "pages/user/user",
+    "pages/orderDetail/orderDetail",
+    "pages/myCourseList/myCourseList",
+    "pages/myContract/myContract"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#4255B3"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4255B3",
+    "list": [
+      {
+        "text": "课表",
+        "iconPath": "/static/img/tab/icon_home.png",
+        "selectedIconPath": "/static/img/tab/icon_home-in.png",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "text": "消息",
+        "iconPath": "/static/img/tab/icon_work.png",
+        "selectedIconPath": "/static/img/tab/icon_work-in.png",
+        "pagePath": "pages/message/message"
+      },
+      {
+        "text": "我的",
+        "iconPath": "/static/img/tab/icon_my.png",
+        "selectedIconPath": "/static/img/tab/icon_my-in.png",
+        "pagePath": "pages/user/user"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "定位"
+    }
+  },
+  "usingComponents": {
+    "y-loading": "/components/base/loading",
+    "home": "/components/base/home",
+    "lazy-img": "/components/base/lazyImg",
+    "list": "/components/base/list"
+  },
+  "sitemapLocation": "sitemap48.json"
+}

@@ -1,0 +1,47 @@
+/* 两个登录页面 
+pagesPartner/login/login
+pagesService/login/login
+*/
+
+.container {
+	padding: 0 30upx;
+}
+.logo-wrap {
+	padding-top: 100upx;
+	text-align: center;
+	image {
+		width: 300upx;
+		height: 220upx;
+	}
+}
+.form {
+	box-shadow:0px 2upx 8upx 0px rgba(0,0,0,0.15);
+	margin-bottom: 40upx;
+}
+.form-item {
+	font-size: $font-size-base;
+	padding: 30upx 20upx;
+	&+.form-item {
+		border-top: 1px solid $border-color;
+	}
+	image { 
+		width: 32upx;
+		height: 32upx;
+		margin-right: 20upx;
+	}
+}
+
+.btn-login {
+	margin: 40upx auto 0;
+	border-radius:44upx;
+	color: #FFFFFF;
+	font-size: 36upx;
+	font-weight: 500;
+	width:390upx;
+	text-align: center;
+	line-height:88upx;
+	box-shadow:0px 8upx 24upx 0px rgba(0,10,191,0.2);
+	background:linear-gradient(180deg,rgba(115,138,255,1) 0%,rgba(66,85,179,1) 100%);
+	z-index: 1;
+	position: relative;
+}

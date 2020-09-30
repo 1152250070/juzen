@@ -1,0 +1,16 @@
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\NLog.config
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Service.deps.json
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Service.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Service.pdb
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Library.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Model.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Wechat.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Library.pdb
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Model.pdb
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\bin\Release\netstandard2.0\Mammothcode.Wechat.pdb
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\obj\Release\netstandard2.0\Mammothcode.Service.csprojAssemblyReference.cache
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\obj\Release\netstandard2.0\Mammothcode.Service.AssemblyInfoInputs.cache
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\obj\Release\netstandard2.0\Mammothcode.Service.AssemblyInfo.cs
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\obj\Release\netstandard2.0\Mammothcode.Service.csproj.CopyComplete
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\obj\Release\netstandard2.0\Mammothcode.Service.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Service\obj\Release\netstandard2.0\Mammothcode.Service.pdb

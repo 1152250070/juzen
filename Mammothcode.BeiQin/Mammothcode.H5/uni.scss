@@ -1,0 +1,51 @@
+@import "./style/base/h5.scss";
+
+/* 主色 */
+$theme-color: #6A9E49;
+$theme-color-light: #79C3F0;
+$text-color:#333;
+$color-grey:#999;
+$color-placeholder: #808080;
+/* 背景颜色 */
+$bg-color-grey:#F3F3F5;
+$bg-color-image: #FAFAFA;
+$bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+$bg-disabled: #c8c8c8;
+/* 边框颜色 */
+$border-color:#EFEFEF;
+/* 文字尺寸 */
+$font-size-xsm:20upx;
+$font-size-sm:24upx;
+$font-size-base:28upx;
+$font-size-lg:32upx;
+$font-size-xlg:36upx;
+/* Border Radius */
+$border-radius-sm: 4upx;
+$border-radius-base: 8upx;
+$border-radius-lg: 12upx;
+$border-radius-xlg: 16upx;
+$border-radius-circle: 50%;
+.placeholder {
+	color: $color-placeholder;
+}
+.shadow {
+	box-shadow :0px 2upx 8upx 0px rgba(0,0,0,0.1);
+}
+
+.shadow-box {
+	background-color: #fff;
+	border-radius: $border-radius-lg;
+	@extend .shadow;
+}
+
+.noselect {
+	user-select: none;
+}
+
+:export {
+	imageBg: $bg-color-image
+}
+
+.uni-checkbox-input:hover {
+    border-color: #6A9E49 !important;
+}

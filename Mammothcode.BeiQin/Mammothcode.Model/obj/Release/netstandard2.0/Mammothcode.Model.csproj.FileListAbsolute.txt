@@ -1,0 +1,8 @@
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\bin\Release\netstandard2.0\Mammothcode.Model.deps.json
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\bin\Release\netstandard2.0\Mammothcode.Model.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\bin\Release\netstandard2.0\Mammothcode.Model.pdb
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\obj\Release\netstandard2.0\Mammothcode.Model.csprojAssemblyReference.cache
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\obj\Release\netstandard2.0\Mammothcode.Model.AssemblyInfoInputs.cache
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\obj\Release\netstandard2.0\Mammothcode.Model.AssemblyInfo.cs
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\obj\Release\netstandard2.0\Mammothcode.Model.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Model\obj\Release\netstandard2.0\Mammothcode.Model.pdb

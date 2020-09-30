@@ -1,0 +1,43 @@
+/* 订单商品样式 
+pages/orderList/orderList
+pages/orderDetail/orderDetail
+*/
+.products-wrap {
+	.product-info {
+		padding: 30upx 20upx;
+		border-bottom: 1px solid $border-color;
+	}
+	.item-img {
+		width: 160upx;
+		height: 160upx;
+		margin-right: 20upx;
+	}
+	.item-info {
+		height: 160upx;
+	}
+	.item-title {
+		font-size: $font-size-sm;
+		line-height: 1.5;
+	}
+	.item-desc {
+		font-size: $font-size-xsm;
+		color: #999999;
+		padding: 10upx 0 14upx;
+	}
+	.item-price-info {
+		align-items: flex-end;
+	}
+	.item-price {
+		font-size: $font-size-lg;
+		color: $color-price;
+		&:before {
+			content: '￥';
+			font-size: $font-size-sm;
+		}
+		&.item-integral {
+			&:before {
+				content: '积分：';
+			}
+		}
+	}
+}

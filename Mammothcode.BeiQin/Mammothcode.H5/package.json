@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "captcha-mini": "^1.1.0",
+    "vue-amap": "^0.5.10",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-lazyload": "^1.3.3",
+    "vue-video-player": "^5.0.2"
+  }
+}

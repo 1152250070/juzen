@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "课表",
+  "enablePullDownRefresh": true,
+  "backgroundColorBottom": "#F9F9F9",
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#F9F9F9",
+  "usingComponents": {
+    "common-dialog": "/components/base/commonDialog",
+    "calendar": "/components/base/mobile-calendar/Calendar",
+    "time-picker": "/components/base/timePicker"
+  }
+}

@@ -1,0 +1,53 @@
+/* 购物车计数 */
+.count-wrap {
+	height: 40upx;
+	input {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 6upx;
+		border: 1px solid #C4C6CF;
+		width: 72upx;
+		text-align: center;
+		font-size: $font-size-sm;
+		height: 40upx;
+		line-height: 40upx;
+		box-sizing: border-box;
+	}
+	.operate {
+		display: inline-block;
+		vertical-align: top;
+		width: 56upx;
+		height: 40upx;
+		position: relative;
+		box-sizing: border-box;
+		border: 1px solid #C4C6CF;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 24upx;
+			height: 2upx;
+			background-color: #333;
+		}
+		&.operate-reduce {
+			border-top-left-radius: 6upx;
+			border-bottom-left-radius: 6upx;
+		}
+		&.operate-add {
+			border-top-right-radius: 6upx;
+			border-bottom-right-radius: 6upx;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				width: 2upx;
+				height: 24upx;
+				background-color: #333;
+			}
+		}
+	}
+}

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 背景相关颜色 */
+/* 状态颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* Border Radius */
+/* business */
+.base-radius {
+  border-radius: 44rpx;
+}
+.lg-radius {
+  border-radius: 12rpx;
+}
+.shadow-box {
+  background-color: #fff;
+  box-shadow: 0px 4rpx 8rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius: 12rpx;
+}
+.viewAll {
+  color: #999999;
+  margin: 30rpx 30rpx 0;
+}
+.viewAll .item-img {
+  width: 35rpx;
+  height: 28rpx;
+  margin-right: 12rpx;
+}
+.message-wrap {
+  margin: 20rpx 30rpx 0;
+}
+.message-wrap .message-item {
+  margin-bottom: 20rpx;
+  padding: 20rpx 14rpx 20rpx 20rpx;
+  background: #FFFFFF;
+  box-shadow: 0px 4rpx 8rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx;
+}
+.message-wrap .message-item .message-name {
+  font-size: 32rpx;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+}
+.message-wrap .message-item .message-name .dot {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: #AC2124;
+  margin-left: 10rpx;
+}
+.message-wrap .message-item .message-time {
+  color: #999999;
+}
+.message-wrap .message-item .message-tip {
+  color: #999999;
+}
+

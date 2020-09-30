@@ -1,0 +1,105 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页,
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "课表",
+				"enablePullDownRefresh": true,
+				"backgroundColorBottom":"#F9F9F9",
+				"backgroundTextStyle": "dark",
+				"backgroundColor":"#F9F9F9"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "约课系统",
+				"enablePullDownRefresh": false,
+				"backgroundColorBottom":"#1EAFF5",
+				"backgroundTextStyle": "light",
+				"backgroundColor":"#006D93"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true,
+				"backgroundColorBottom":"#F9F9F9",
+				"backgroundTextStyle": "dark",
+				"backgroundColor":"#F9F9F9"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": true,
+				"backgroundColorBottom":"#F9F9F9",
+				"backgroundTextStyle": "dark",
+				"backgroundColor":"#F9F9F9"
+			}
+		},
+		{
+			"path": "pages/orderDetail/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"backgroundColorBottom":"#F5F5F5",
+				"backgroundTextStyle": "dark",
+				"backgroundColor":"#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/myCourseList/myCourseList",
+			"style": {
+				"navigationBarTitleText": "我的课程",
+				"enablePullDownRefresh": true,
+				"backgroundColorBottom":"#F5F5F5",
+				"backgroundTextStyle": "dark",
+				"backgroundColor":"#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/myContract/myContract",
+			"style": {
+				"navigationBarTitleText": "我的合同",
+				"enablePullDownRefresh": true,
+				"backgroundColorBottom":"#F5F5F5",
+				"backgroundTextStyle": "dark",
+				"backgroundColor":"#FFFFFF"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#4255B3"
+	},
+	"tabBar":{
+		"color":"#999999",
+		"selectedColor":"#4255B3",
+		"list": [
+			{
+				"text":"课表",
+				"iconPath":"/static/img/tab/icon_home.png",
+				"selectedIconPath":"/static/img/tab/icon_home-in.png",
+				"pagePath":"pages/index/index"
+			},
+			{
+				"text":"消息",
+				"iconPath":"/static/img/tab/icon_work.png",
+				"selectedIconPath":"/static/img/tab/icon_work-in.png",
+				"pagePath":"pages/message/message"
+			},
+			{
+				"text":"我的",
+				"iconPath":"/static/img/tab/icon_my.png",
+				"selectedIconPath":"/static/img/tab/icon_my-in.png",
+				"pagePath":"pages/user/user"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": []
+	}
+}

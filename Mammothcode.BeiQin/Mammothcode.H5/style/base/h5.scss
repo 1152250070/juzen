@@ -1,0 +1,65 @@
+@mixin fixed-top {
+	top: calc(44px + constant(safe-area-inset-top));
+	top: calc(44px + env(safe-area-inset-top));
+}
+
+@mixin fixed-left {
+	left: 0;
+}
+
+@mixin fixed-right {
+	right: 0;
+}
+
+@mixin fixed-bottom {
+	bottom: calc(50px + constant(safe-area-inset-bottom));
+	bottom: calc(50px + env(safe-area-inset-bottom));
+}
+
+@mixin fixed-cover {
+	position: fixed;
+	@include fixed-top;
+	@include fixed-left;
+	@include fixed-right;
+	@include fixed-bottom;
+}
+
+@mixin fixed-top-area {
+	position: fixed;
+	@include fixed-top;
+	@include fixed-left;
+	@include fixed-right;
+}
+
+@mixin fixed-bottom-area {
+	position: fixed;
+	@include fixed-left;
+	@include fixed-right;
+	@include fixed-bottom;
+}
+
+@mixin absolute-cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+// 多行文本省略
+$i: 3;
+@while $i > 0 {
+  .text-hidden-#{$i} { 
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $i;
+  }
+  $i: $i - 1;
+}
+
+@mixin inline-block {
+	display: inline-block;
+	vertical-align: top;
+}

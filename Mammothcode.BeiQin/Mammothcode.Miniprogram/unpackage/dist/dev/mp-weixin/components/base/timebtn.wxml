@@ -1,0 +1,1 @@
+<view class="btn-time-out"><block wx:if="{{!timeNum}}"><text data-event-opts="{{[['tap',[['handleStartRun',['$event']]]]]}}" bindtap="__e">{{text}}</text></block><block wx:else><text>{{timeNum+"s"}}</text></block></view>

@@ -1,0 +1,257 @@
+@import "../../style/business/count-wrap.scss";
+.p-20{
+	padding: 20rpx;
+}
+.m-20{
+	margin: 20rpx;
+}
+.mt-20{
+	margin-top: 20rpx
+}
+.mr-20{
+	margin-right: 20rpx
+}
+.mb-20{
+	margin-bottom: 20rpx
+}
+.pt-20{
+	padding-top: 20rpx
+}
+.pb-20{
+	padding-bottom: 20rpx
+}
+.container {
+	background: $bg-color-grey;
+	height: 100%;
+	position: relative;
+	padding-bottom: 100upx;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+.order_tip{
+	color: #FFFFFF;
+	padding: 20rpx 30rpx;
+	.state{
+		font-size: 32rpx;
+	}
+	.tip{
+		font-size: 24rpx;
+	}
+}
+// 地址信息
+.address-info {
+	background: #FFFFFF;
+	padding: 20upx 30upx;
+	margin: 0 0 20upx;
+	font-size: $font-size-base;
+	.default{
+		background: #1EAFF5;
+		color: #FFFFFF;
+		border-radius: 6rpx;
+		font-size: 20rpx;
+		width: 66rpx;
+		padding: 4rpx 0;
+		text-align: center;
+		display: inline-block;
+	}
+	&.address-add {
+		padding: 30upx 20upx;
+	}
+	.right-arrow {
+		width: 20upx;
+		height: 20upx;
+		color: #777777;
+	}
+	.info-item {
+		font-size: 32rpx;
+	}
+}
+
+// 预约时间
+.appoint-time {
+	@extend .shadow-box;
+	margin: 0 30upx 30upx;
+	padding: 30upx 20upx;
+}
+
+// 商品信息
+.product-info {
+	padding: 20upx;
+	margin: 30upx;
+	font-size: $font-size-base;
+	@extend .shadow-box;
+	.list-item {
+		padding: 30upx 20upx;
+		&+.list-item {
+			border-top: 1px solid $border-color;
+		}
+	}
+	.item-img {
+		width: 160upx;
+		height: 160upx;
+		margin-right: 20upx;
+	}
+	.item-title {
+		font-size: $font-size-sm;
+		line-height: 1.5;
+		margin-bottom: 50upx;
+	}
+	.item-price {
+		font-size: $font-size-lg;
+		color: $color-price;
+		&:before {
+			content: '￥';
+			font-size: $font-size-sm;
+		}
+	}
+	.product-info-item {
+		padding: 20upx 30upx 0;
+		border-top: 1px solid $border-color;
+		font-size: $font-size-base;
+	}
+	
+	// 订单信息
+	.order-info {
+		font-size: $font-size-base;
+		border-top: 1px solid $border-color;
+		padding-top: 10upx;
+		.order-info-item {
+			margin: 20upx 18upx;
+		}
+		.light {
+			color: #999999;
+			font-size: $font-size-sm;
+			padding-top: 4upx;
+		}
+	}
+}
+.order-list{
+	background: #FFFFFF;
+	padding: 24rpx 30upx;
+	font-size: $font-size-base;
+	border-bottom: 1px solid #ECF0F4;
+}
+.cart-wrap{
+	margin-bottom:20rpx;
+	background: #FFFFFF;
+	padding: 20rpx 0;
+	position: relative;
+	.good-avatar {
+		width: 140rpx;
+		height: 140rpx;
+		border-radius: 10rpx;
+		margin: 0 20rpx 0 30rpx;
+	}
+	.good-nickname {
+		font-size: 32upx;
+		color: #333333;
+		margin-right: 20upx;
+		height: 140rpx;
+	}
+	.good-specs {
+		font-size: 24upx;
+		color: #999999;
+	}
+	.good-price{
+		color: #FF4141;
+		font-size: 32upx;
+		margin-top: 28rpx;
+	}
+	.count-wrap{
+		position: absolute;
+		right: 0rpx;
+		bottom: 20rpx;
+		text{
+			position: relative;
+			top: -10rpx;
+		}
+		image{
+			width: 42rpx;
+			height: 42rpx;
+			margin: 0 40rpx;
+		}
+	}
+	.count-num{
+		position: absolute;
+		right: 30rpx;
+		bottom: 20rpx;
+		font-size: 32upx;
+		color: #333333;
+		font-weight: 500;
+		text{
+			position: relative;
+			top: -10rpx;
+		}
+	}
+}
+// 备注
+.order-remark {
+	background: #FFFFFF;
+	padding: 24rpx 30upx;
+	font-size: $font-size-base;
+}
+
+// 支付方式
+.payway-box {
+	@extend .shadow-box;
+	margin: 30upx;
+	.pay-item {
+		border-bottom: 1px solid $border-color;
+		padding: 30upx 20upx;
+	}
+	.ic-radio {
+		margin-right: 20upx;
+	}
+}
+
+// 对公打款
+.form {
+	margin: 30upx;
+	@extend .shadow-box;
+	.form-item {
+		font-size: $font-size-base;
+		padding: 30upx 20upx;
+		&+.form-item {
+			border-top: 1px solid $border-color;
+		}
+	}
+}
+
+// 底部栏
+.tools-bar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100upx;
+	background-color: #FFFFFF;
+	box-shadow:0px -2rpx 8rpx 0px rgba(0,0,0,0.05);
+	z-index: 2;
+	.tools-bar-btn {
+		text-align: center;
+		font-size: 28rpx;
+		color: #FFFFFF;
+		line-height: 68upx;
+		background-color: #5EA9FF;
+		width: 220upx;
+		border-radius:50upx;
+		margin-right: 20upx;
+	}
+	.total-info {
+		padding-left: 30upx;
+		font-size: 32rpx;
+		.total-fee {
+			font-size: 32rpx;
+			padding-right: 20upx;
+			text-align: right;
+			.text2 {
+				display: inline;
+			}
+			.fee-fh {
+				display: inline;
+				color: #FF5757;
+				padding-left: 10upx;
+			}
+		}
+	}
+}

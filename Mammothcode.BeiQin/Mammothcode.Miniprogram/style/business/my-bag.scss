@@ -1,0 +1,86 @@
+/* 我的钱包 
+pages/myBag/myBag
+pages/integralRecord/integralRecord
+*/
+.page-top {
+	background-color: $theme-color;
+	padding: 30upx 0 150upx;
+	color: #fff;
+	position: relative;
+	.user-balance {
+		margin-bottom: 10upx;
+		font-size: 48upx;
+		.fh {
+			content: '￥';
+			margin-right: -10upx;
+		}
+	}
+	label {
+		font-size: $font-size-base;
+	}
+	.integral-rule {
+		position: absolute;
+		bottom: 80upx;
+		right: 30upx;
+		z-index: 1;
+		opacity: 0.7;
+		font-size: 0;
+		image {
+			width: 40upx;
+			height: 40upx;
+			margin-right: 6upx;
+			margin-bottom: -4upx;
+		}
+		text {
+			font-size: $font-size-base;
+		}
+	}
+}
+.content-wrap {
+	overflow: hidden;
+	@extend .shadow-box;
+	z-index: 1;
+	margin: -120upx 20upx 90upx;
+	.content-title {
+		height: 94upx;
+		padding: 30upx 0 20upx;
+		margin: 0 20rpx;
+		box-sizing: border-box;
+		border-bottom: 1px solid $border-color;
+		font-weight: bold;
+	}
+	.scroll-view {
+		height: calc(100% - 94upx);
+	}
+	.list-item {
+		padding: 30upx 20upx;
+		border-bottom: 1px solid $border-color;
+		.title {
+			font-size: $font-size-base;
+		}
+		.time {
+			color: #999;
+			font-size: $font-size-sm;
+			padding-top: 10upx;
+		}
+		.amount {
+			font-size: $font-size-lg;
+			margin-left: 20upx;
+		}
+	}
+}
+.btn-recharge-wrap {
+	margin: 0 30upx;
+	text-align: center;
+	.btn-recharge {
+		background-color: #FF6969;
+		font-size: $font-size-base;
+		border-radius: $border-radius-lg;
+		line-height: 88upx;
+		height: 88upx;
+		color: #fff;
+		&+.btn-recharge {
+			margin-left: 30upx;
+		}
+	}
+}

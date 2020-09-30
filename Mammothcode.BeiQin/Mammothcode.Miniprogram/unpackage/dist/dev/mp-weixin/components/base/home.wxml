@@ -1,0 +1,1 @@
+<block wx:if="{{isShow}}"><view data-event-opts="{{[['tap',[['handleSwitchTab',['$event']]]]]}}" class="btn-home" bindtap="__e"><text>首页</text></view></block>

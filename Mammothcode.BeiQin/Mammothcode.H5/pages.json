@@ -1,0 +1,51 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页,
+        {
+            "path": "pages/index/index"
+        },
+        {
+            "path": "pages/login/index"
+        },
+        {
+            "path": "pages/code/index"
+		},
+        {
+            "path": "pages/my/index"
+		},
+        {
+            "path": "pages/info/index"
+		},
+        {
+            "path": "pages/history/index"
+		},
+        {
+            "path": "pages/detail/index"
+		}
+	],
+	"workers":"workers",
+	"globalStyle": {
+		"backgroundColor":"#FFFFFF",
+		"backgroundColorBottom":"#F9F9F9",
+		"navigationBarBackgroundColor":"#FFFFFF",
+        "navigationBarTextStyle":"black",
+        "navigationStyle": "custom"
+
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"path":"pages/index/index",
+				"name":"首页"
+            },
+            {
+				"path":"pages/login/index",
+				"name":"登录"
+            },
+            {
+				"path":"pages/code/index",
+				"name":"扫码"
+            }
+		]
+	}
+}

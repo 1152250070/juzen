@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mammothcode.AdminService</name>
+    </assembly>
+    <members>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.EndTimeStr">
+            <summary>
+            上课结束时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.StartTimeStr">
+            <summary>
+            上课开始时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.ClassId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.ClassName">
+            <summary>
+            班级名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.CourseName">
+            <summary>
+            课程名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.TeacherId">
+            <summary>
+            教师Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.TeacherName">
+            <summary>
+            教师姓名
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.OrderTimeLong">
+            <summary>
+            预约时间段
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.TotalSignUp">
+            <summary>
+            可以报名人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.SignUpNum">
+            <summary>
+            已报名人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.CourseTime">
+            <summary>
+            课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddScheduleBaseModel.Sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.MemberLogoModel.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.MemberLogoModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Mammothcode.AdminService.Models.GetTeacherScheduleModel">
+            <summary>
+            教师课表
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.GetTeacherScheduleModel.WeekIndex">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.GetMemCourseModel.OrderDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.GetMemCourseModel.CourseTypeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.GetMemCourseModel.OrderStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.GetMemCourseModel.CourseOrderId">
+            <summary>
+            课程包Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddCourseOrderModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddCourseOrderModel.CourseOrderName">
+            <summary>
+            课程包名称
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Mammothcode.AdminService.Models.AddCourseOrderModel.OrderType" -->
+        <member name="P:Mammothcode.AdminService.Models.AddCourseOrderModel.MId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddCourseOrderModel.TotalLeaveNum">
+            <summary>
+            可以请假的次数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddCourseOrderModel.EffectiveTiem">
+            <summary>
+            有效时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddCourseOrderModel.AttachUrl">
+            <summary>
+            附件地址
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AddCourseOrderModel.TotalClassTime">
+            <summary>
+            总课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AgreeOrderModel.IntegralNum">
+            <summary>
+            积分数量
+            </summary>
+        </member>
+        <member name="P:Mammothcode.AdminService.Models.AgreeOrderModel.IntegralFee">
+            <summary>
+            兑换金额
+            </summary>
+        </member>
+        <member name="T:Mammothcode.AdminService.Services.ConfigService">
+            <summary>
+            系统配置
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.ConfigService.GetSystemConfig">
+            <summary>
+            获取配置项
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.ConfigService.UpdateSystemConfig(Mammothcode.Model.SystemConfigModel)">
+            <summary>
+            更新配置项
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.ConfigService.AddKBConfig(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            新增课包名称
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.ConfigService.UpdateKBConfig(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            修改课包名称
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.ConfigService.DeleteKBConfig(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            删除课包名称
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.ConfigService.GetKBNameList(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            获取课包名称列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.AdminService.Services.CourseService">
+            <summary>
+            课程管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.AddTeacherBase(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            新增教师
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.UpdateTeacherBase(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            修改教师
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.DeleteTeacherBase(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            删除教师
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.GetTeacherBaseList(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            获取教师列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.AddClassBase(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            新增班级
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.UpdateClassBase(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            修改班级
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.DeleteClassBase(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            删除班级
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.GetClassBaseList(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            获取班级列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.AddCourseType(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            新增课程分类
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.UpdateCourseType(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            修改课程分类
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.DeleteCourseType(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            删除课程分类
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.GetCourseTypeList(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            获取课程分类列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.AddCourseBase(Mammothcode.Model.CourseBaseModel)">
+            <summary>
+            新增课程
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.UpdateCourseBase(Mammothcode.Model.CourseBaseModel)">
+            <summary>
+            修改课程
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.DeleteCourseBase(Mammothcode.Model.CourseBaseModel)">
+            <summary>
+            删除课程
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.GetCourseBaseList(Mammothcode.AdminService.Models.GetCourseBaseModel)">
+            <summary>
+            获取课程列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.AddScheduleBase(Mammothcode.AdminService.Models.AddScheduleBaseModel)">
+            <summary>
+            新增课表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.UpdateScheduleBase(Mammothcode.AdminService.Models.AddScheduleBaseModel)">
+            <summary>
+            修改课表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.DeleteScheduleBase(Mammothcode.Model.ScheduleBaseModel)">
+            <summary>
+            删除课表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.CourseService.GetScheduleBaseList(Mammothcode.Model.ScheduleBaseModel)">
+            <summary>
+            获取课表列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.AdminService.Services.MemberService">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.GetMemberList(Mammothcode.Model.MemberModel)">
+            <summary>
+            获取用户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.GetMemberSingle(Mammothcode.Model.MemberModel)">
+            <summary>
+            获取用户详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.AddMember(Mammothcode.Model.MemberModel)">
+            <summary>
+            添加员工
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.UpdateMember(Mammothcode.Model.MemberModel)">
+            <summary>
+            更新员工信息
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.DelMember(Mammothcode.Model.MemberModel)">
+            <summary>
+            删除用户
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.AddCourseOrder(Mammothcode.AdminService.Models.AddCourseOrderModel)">
+            <summary>
+            新增用户课程包
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.UpdateCourseOrder(Mammothcode.Model.CourseOrderModel)">
+            <summary>
+            修改用户课程包
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.DeleteCourseOrder(Mammothcode.Model.CourseOrderModel)">
+            <summary>
+            删除用户课程包
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.GetCourseOrderList(Mammothcode.AdminService.Models.GetCourseOrderModel)">
+            <summary>
+            获取用户课程包列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.AddCourseOrderItem(Mammothcode.Model.CourseOrderItemModel)">
+            <summary>
+            新增课程包中课程
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.UpdateCourseOrderItem(Mammothcode.Model.CourseOrderItemModel)">
+            <summary>
+            修改课程包中课程
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.DeleteCourseOrderItem(Mammothcode.Model.CourseOrderItemModel)">
+            <summary>
+            删除课程包中课程
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.GetCourseOrderItemList(Mammothcode.AdminService.Models.GetCourseOrderItemModel)">
+            <summary>
+            获取课程包中课程列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.MemberService.GetMemberOrderCourseList(Mammothcode.AdminService.Models.GetMemCourseModel)">
+            <summary>
+            获取客户预约课程列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.AdminService.Services.TeacherService">
+            <summary>
+            教师管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.TeacherService.MemberLogin(Mammothcode.AdminService.Models.MemberLogoModel)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.TeacherService.CheckLogin(Mammothcode.Service.CheckLoginModel)">
+            <summary>
+            验证Token是否失效
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.TeacherService.GetTeachClassList(Mammothcode.AdminService.Models.GetTeachClassModel)">
+            <summary>
+            获取我任课班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.TeacherService.GetTeacherScheduleBaseList(Mammothcode.AdminService.Models.GetTeacherScheduleModel)">
+            <summary>
+            获取教師課表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.TeacherService.GetMemberOrderCourseList(Mammothcode.AdminService.Models.GetMemCourseModel)">
+            <summary>
+            获取客户预约课程列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminService.Services.TeacherService.SetMemOrderCourse(Mammothcode.AdminService.Models.SetMemOrderCourseModel)">
+            <summary>
+            教师操作用户的预约课程--点名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.Service.SystemService">
+            <summary>
+            后台基础服务
+            </summary>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.Login(Mammothcode.Model.SystemAdminModel)">
+            <summary>
+            用户登入
+            王剑锋 
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.CheckLogin(Mammothcode.Service.CheckLoginModel)">
+            <summary>
+            验证Token是否失效
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.AddUserInAdmin(Mammothcode.Model.SystemAdminModel)">
+            <summary>
+            添加员工
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.UpdateUserInAdmin(Mammothcode.Model.SystemAdminModel)">
+            <summary>
+            修改员工
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.DelUserInAdmin(Mammothcode.Model.SystemAdminModel)">
+            <summary>
+            删除员工
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.UpdatePasswordInAdmin(Mammothcode.Model.SystemAdminModel)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.GetUserListInAdmin(Mammothcode.Model.SystemAdminModel)">
+            <summary>
+            获取用户列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.AddRolesInAdmin(Mammothcode.Model.SystemRolesModel)">
+            <summary>
+            添加角色
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.UpdateRolesInAdmin(Mammothcode.Model.SystemRolesModel)">
+            <summary>
+            修改角色
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.DelRolesInAdmin(Mammothcode.Model.SystemRolesModel)">
+            <summary>
+            删除角色
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.GetRolesListInAdmin(Mammothcode.Model.SystemRolesModel)">
+            <summary>
+            获取角色列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.AddMenusInAdmin(Mammothcode.Model.SystemMenusModel)">
+            <summary>
+            添加菜单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.UpdateMenusInAdmin(Mammothcode.Model.SystemMenusModel)">
+            <summary>
+            修改菜单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.DelMenusInAdmin(Mammothcode.Model.SystemMenusModel)">
+            <summary>
+            删除菜单
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.GetMenusListInAdmin(Mammothcode.Model.SystemMenusModel)">
+            <summary>
+            获取菜单列表
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.UpdatePowerInAdmin(Mammothcode.Model.SystemPowerModel)">
+            <summary>
+            修改角色权限
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.Service.SystemService.GetPowerInAdmin(Mammothcode.Model.SystemPowerModel)">
+            <summary>
+            获取角色权限
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.Service.SystemToken">
+            <summary>
+            登入信息
+            </summary>
+        </member>
+    </members>
+</doc>

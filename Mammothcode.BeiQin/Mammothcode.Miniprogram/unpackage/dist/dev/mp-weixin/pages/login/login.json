@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "约课系统",
+  "enablePullDownRefresh": false,
+  "backgroundColorBottom": "#1EAFF5",
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#006D93",
+  "usingComponents": {
+    "timebtn": "/components/base/timebtn"
+  }
+}

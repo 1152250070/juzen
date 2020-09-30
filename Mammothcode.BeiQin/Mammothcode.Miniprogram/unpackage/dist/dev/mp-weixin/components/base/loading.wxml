@@ -1,0 +1,1 @@
+<view hidden="{{!(isShow)}}" class="loading-page-cover data-v-65f48c94"><view class="loading-page-wrap data-v-65f48c94"><block wx:for="{{data}}" wx:for-item="item" wx:for-index="index" wx:key="index"><text class="data-v-65f48c94"></text></block></view></view>

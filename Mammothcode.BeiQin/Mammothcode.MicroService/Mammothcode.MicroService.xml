@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mammothcode.MicroService</name>
+    </assembly>
+    <members>
+        <member name="T:Mammothcode.MicroService.Components.ActiveScoreCommon">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Mammothcode.MicroService.Components.WechatComponent.GetH5AuthUrl(System.String)">
+            <summary>
+            重定向到微信服务器，已触发微信返回jscode
+            </summary>
+            <param name="url">通知地址</param>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.GetCourseTypeModel">
+            <summary>
+            获取课程类别
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetCourseScheduleModel.OrderDate">
+            <summary>
+            预约时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetCourseScheduleModel.CourseTypeId">
+            <summary>
+            课程类型
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetCourseScheduleModel.WeekIndex">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.AdvanceClassModel">
+            <summary>
+            预约时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.AdvanceClassModel.Id">
+            <summary>
+            课表Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.AdvanceClassModel.OrderDate">
+            <summary>
+            预约日期
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.CanceLineUpClassModel">
+            <summary>
+            取消排队预约
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.CancelAdvanceClassModel">
+            <summary>
+            取消预约
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.CancelAdvanceClassModel.Id">
+            <summary>
+            预约单Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.CancelAdvanceClassModel.ScheduleId">
+            <summary>
+            课表Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.CancelAdvanceClassModel.CourseOrderId">
+            <summary>
+            课程包ID
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.AskForLeaveClassModel">
+            <summary>
+            请假
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.AskForLeaveClassModel.Id">
+            <summary>
+            预约单Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.AskForLeaveClassModel.ScheduleId">
+            <summary>
+            课表Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.AskForLeaveClassModel.CourseOrderId">
+            <summary>
+            课程包ID
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.ClassId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.ClassName">
+            <summary>
+            班级名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.CourseTypeId">
+            <summary>
+            课程类别Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.CourseName">
+            <summary>
+            课程名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.TeacherId">
+            <summary>
+            教师Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.TeacherName">
+            <summary>
+            教师姓名
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.EndTimeStr">
+            <summary>
+            上课结束时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.StartTimeStr">
+            <summary>
+            上课开始时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.OrderTimeLong">
+            <summary>
+            预约时间段
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.TotalSignUp">
+            <summary>
+            可以报名人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.SignUpNum">
+            <summary>
+            已报名人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.LineUpNum">
+            <summary>
+            排队人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.LeaveNum">
+            <summary>
+            请假人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.CourseTime">
+            <summary>
+            课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.Sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.WeekIndex">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.MaxMonthsAges">
+            <summary>
+            最大月龄
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.ResultsCourseSchedule.MinMonthsAges">
+            <summary>
+            最小月龄
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.MemberToken">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.MemberParam">
+            <summary>
+            用户注册
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.MemberParam.JsCode">
+            <summary>
+            jscode
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.MemberParam.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.MemberParam.HeadImg">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.MemberParam.Mobile">
+            <summary>
+            用户手机号
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.SendMobileMessageModel">
+            <summary>
+            发短信验证
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.GetMemberInfoModel">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetMemberInfoModel.MemberId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.GetMemberMessageModel">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.GetMemMemssegeModel">
+            <summary>
+            获取用户消息
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetMemMemssegeModel.MessageId">
+            <summary>
+            消息Id
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Models.GetMemCourseModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetMemCourseModel.OrderDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetMemCourseModel.CourseTypeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetMemCourseModel.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetMemCourseModel.CourseOrderId">
+            <summary>
+            课程包Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.MicroService.Models.GetMemCourseDetailsModel.MemOrderCourseId">
+            <summary>
+            用户预约课程Id
+            </summary>
+        </member>
+        <member name="T:Mammothcode.MicroService.Services.ConfigService">
+            <summary>
+            系统配置
+            </summary>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.ConfigService.GetCompanySingle">
+            <summary>
+            获取公司基础配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.ConfigService.GetPublicKey">
+            <summary>
+            获取公钥
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.MicroService.Services.CourseService">
+            <summary>
+            课程管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.GetCourseTypeList(Mammothcode.MicroService.Models.GetCourseTypeModel)">
+            <summary>
+            获取课程类别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.GetCourseScheduleList(Mammothcode.MicroService.Models.GetCourseScheduleModel)">
+            <summary>
+            获取预约课表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.AdvanceClass(Mammothcode.MicroService.Models.AdvanceClassModel)">
+            <summary>
+            预约课程时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.LineUpAdvanceClass(Mammothcode.MicroService.Models.AdvanceClassModel)">
+            <summary>
+            排队预约课程时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.CanceLineUpAdvanceClass(Mammothcode.MicroService.Models.CanceLineUpClassModel)">
+            <summary>
+            取消排队预约课程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.CancelAdvanceClass(Mammothcode.MicroService.Models.CancelAdvanceClassModel)">
+            <summary>
+            取消预约课程时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.AskForLeaveClass(Mammothcode.MicroService.Models.AskForLeaveClassModel)">
+            <summary>
+            请假预约课程时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.CourseService.AutoOrderCourseStatus">
+            <summary>
+            自动取消预约时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.MicroService.Services.MemberService">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.MemberRegister(Mammothcode.MicroService.Models.MemberParam)">
+            <summary>
+            用户注册
+            </summary>GetMemCourseList
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetMember(Mammothcode.MicroService.Models.GetMemberInfoModel)">
+            <summary>
+            获取用户基本信息
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.SendMobileMessage(Mammothcode.MicroService.Models.SendMobileMessageModel)">
+            <summary>
+            发送短信验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetMemMemssegeList(Mammothcode.MicroService.Models.GetMemberMessageModel)">
+            <summary>
+            获取用户消息
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetMemMemssegeIsReadCount(Mammothcode.MicroService.Models.GetMemMemssegeModel)">
+            <summary>
+            获取用户未读消息角标
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetMemMemssegeReadCount(Mammothcode.MicroService.Models.GetMemMemssegeModel)">
+            <summary>
+            获取用户已读消息角标
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetMemMemssegeSingle(Mammothcode.MicroService.Models.GetMemMemssegeModel)">
+            <summary>
+            获取用户消息详情，把当前消息设置成已读
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.SetAllMemMemssege(Mammothcode.MicroService.Models.GetMemMemssegeModel)">
+            <summary>
+            所有消息设置成已读
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetCourseOrderList(Mammothcode.MicroService.Models.GetCourseOrderModel)">
+            <summary>
+            获取课程包列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetCourseOrderDetail(Mammothcode.MicroService.Models.GetCourseOrderDetailModel)">
+            <summary>
+            获取课程包详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetMemCourseList(Mammothcode.MicroService.Models.GetMemCourseModel)">
+            <summary>
+            获取我的课程
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.MicroService.Services.MemberService.GetMemCourseDetails(Mammothcode.MicroService.Models.GetMemCourseDetailsModel)">
+            <summary>
+            获取我的预约的课程详情
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.MicroService.Services.OrderService">
+            <summary>
+            预约管理
+            </summary>
+        </member>
+    </members>
+</doc>

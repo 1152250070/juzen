@@ -1,0 +1,121 @@
+/* 合伙人管理 & 服务人员管理 */
+
+.container {
+	background: $bg-color-grey;
+	height: 100%;
+}
+.user-info-wrap {
+	background-color: $theme-color;
+	font-size: $font-size-base;
+	color: #fff;
+	position: relative;
+	padding: 30upx 30upx 104upx;
+	.user-avatar {
+		width: 100upx;
+		height: 100upx!important;
+		border-radius: 50%;
+		margin-right: 20upx;
+	}
+	.user-name {
+		font-weight: bold;
+		font-size: $font-size-lg;
+	}
+	.user-rate {
+		font-size: $font-size-sm;
+		padding-top: 20upx;
+	}
+	.btn-logout {
+		position: absolute;
+		right: 30upx;
+		bottom: 130upx;
+		width: 108upx;
+		text-align: center;
+		line-height: 48upx;
+		color: $theme-color;
+		background-color: #fff;
+		text-align: center;
+		border-radius: $border-radius-base;
+	}
+}
+.user-assets {
+	margin: -74upx 30upx 0;
+	height: 148upx;
+	@extend .shadow-box;
+	border-radius: $border-radius-base;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 30upx;
+		bottom: 30upx;
+		right: 50%;
+		background-color: #D8D8D8;
+		width: 1px;
+		z-index: 1;
+	}
+	.item-img {
+		display: inline-block;
+		width: 60upx;
+		height: 60upx;
+	}
+	.label {
+		color: #333333;
+		font-size: $font-size-sm;
+		.count {
+			position: absolute;
+			background-color: #FF3000;
+			color: #fff;
+			border-radius: $border-radius-xlg;
+			font-size: $font-size-xsm;
+			width: 48upx;
+			text-align: center;
+			line-height: 32upx;
+			right: 140rpx;
+			top: 0;
+			transform: translateX(50%) translateY(-50%);
+			z-index: 1;
+		}
+	}
+}
+.functions-box {
+	margin: 30upx;
+	.function-item {
+		display: inline-block;
+		vertical-align: top;
+		width: 210upx;
+		height: 210upx;
+		box-sizing: border-box;
+		margin-right: 30upx;
+		margin-bottom: 30upx;
+		position: relative;
+		@extend .shadow-box;
+		border-radius: $border-radius-base;
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+		.function-img {
+			display: inline-block;
+			width: 80upx;
+			height: 80upx;
+			margin: 40upx 0 20upx
+		}
+		.text {
+			font-size: $font-size-base;
+			color: #000;
+		}
+		.count {
+			position: absolute;
+			background-color: #FF3000;
+			color: #fff;
+			border-radius: $border-radius-xlg;
+			font-size: $font-size-xsm;
+			width: 48upx;
+			text-align: center;
+			line-height: 32upx;
+			right: 0;
+			top: 0;
+			transform: translateX(50%) translateY(-50%);
+			z-index: 1;
+		}
+	}
+}

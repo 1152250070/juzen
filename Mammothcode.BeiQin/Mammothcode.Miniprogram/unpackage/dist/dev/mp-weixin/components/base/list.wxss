@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* 颜色变量 */
+/* 背景相关颜色 */
+/* 状态颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* Border Radius */
+/* business */
+.base-radius.data-v-17261b94 {
+  border-radius: 44rpx;
+}
+.lg-radius.data-v-17261b94 {
+  border-radius: 12rpx;
+}
+.shadow-box.data-v-17261b94 {
+  background-color: #fff;
+  box-shadow: 0px 4rpx 8rpx 0px rgba(0, 0, 0, 0.05);
+  border-radius: 12rpx;
+}
+.list-container.data-v-17261b94 {
+  font-size: 28rpx;
+  color: #999;
+}
+.loading-wrap.data-v-17261b94 {
+  text-align: center;
+  line-height: 80rpx;
+}
+.loading-wrap image.data-v-17261b94 {
+  width: 48rpx;
+  height: 48rpx;
+}
+.error-image.data-v-17261b94, .nodata-image.data-v-17261b94 {
+  width: 300rpx;
+}
+.none-wrap.data-v-17261b94 {
+  padding: 30rpx 0;
+}
+.all-wrap.data-v-17261b94 {
+  line-height: 80rpx;
+}
+.all-wrap .text.data-v-17261b94 {
+  position: relative;
+}
+.all-wrap .text.data-v-17261b94:before {
+  content: '';
+  position: absolute;
+  width: 80rpx;
+  height: 1px;
+  background-color: #ccc;
+  top: 50%;
+  right: 110%;
+}
+.all-wrap .text.data-v-17261b94:after {
+  content: '';
+  position: absolute;
+  width: 80rpx;
+  height: 1px;
+  background-color: #ccc;
+  top: 50%;
+  left: 110%;
+}
+

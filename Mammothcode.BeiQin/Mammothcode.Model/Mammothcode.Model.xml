@@ -1,0 +1,2062 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mammothcode.Model</name>
+    </assembly>
+    <members>
+        <member name="P:Mammothcode.Model.PageModel.PageType">
+            <summary>
+            分页方式：0[普通分页]|1[下拉分页]
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.PageModel.PageIndex">
+            <summary>
+            页码
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.PageModel.PageSize">
+            <summary>
+            页长
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.PageModel.TakeCount">
+            <summary>
+            是否返回分页总个数：1是，0否
+            默认1
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.PageModel.QueryAll">
+            <summary>
+            是否查询所有
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TokenModel.Token">
+            <summary>
+            用户Token
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TokenPageModel.Token">
+            <summary>
+            用户Token
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.OrderStatusEnum">
+            <summary>
+            预约课状态
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.OrderTypeEnum">
+            <summary>
+            课程包类型
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.ClassBase">
+            <summary>
+            基础班级表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBase.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBase.ClassName">
+            <summary>
+            班级名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBase.TeacherId">
+            <summary>
+            教师ID
+            ColumnType：int(10), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBase.TeacherName">
+            <summary>
+            教师名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBase.Sort">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBase.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseBase">
+            <summary>
+            基础课程表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBase.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBase.CourseTypeId">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBase.CourseName">
+            <summary>
+            课程名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBase.CourseTime">
+            <summary>
+            课时
+            ColumnType：decimal(6,2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBase.CreateTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBase.MaxMonthsAges">
+            <summary>
+            最大月龄
+            ColumnType：int(3), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBase.MinMonthsAges">
+            <summary>
+            最小月龄
+            ColumnType：int(3), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseOrder">
+            <summary>
+            课程包表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.CourseOrderName">
+            <summary>
+            课程包名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.OrderType">
+            <summary>
+            0=通用课包，1=指定课包
+            ColumnType：int(2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.MId">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.MMobile">
+            <summary>
+            用户电话
+            ColumnType：varchar(36), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.StuName">
+            <summary>
+            学员姓名
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.NickName">
+            <summary>
+            昵称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.FinishNum">
+            <summary>
+            完成次数
+            ColumnType：int(11), IsNull：YES, Default：0
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.NoFinishNum">
+            <summary>
+            没有完成次数
+            ColumnType：int(11), IsNull：YES, Default：0
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.TotalLeaveNum">
+            <summary>
+            可以请假的次数
+            ColumnType：int(10), IsNull：YES, Default：0
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.LeaveNum">
+            <summary>
+            已经请假次数
+            ColumnType：int(11), IsNull：YES, Default：0
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.EffectiveTiem">
+            <summary>
+            有效时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.AttachUrl">
+            <summary>
+            附件地址
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.TotalClassTime">
+            <summary>
+            总课时
+            ColumnType：decimal(6,2), IsNull：YES, Default：0.00
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrder.RemainingClassTime">
+            <summary>
+            剩余课时
+            ColumnType：decimal(6,2), IsNull：YES, Default：0.00
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseOrderItem">
+            <summary>
+            课程包_跟随的课程
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItem.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItem.CourseOrderId">
+            <summary>
+            课程包Id
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItem.MId">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItem.CourseId">
+            <summary>
+            课程Id
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItem.CourseName">
+            <summary>
+            课程name
+            ColumnType：varchar(255), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItem.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseType">
+            <summary>
+            课程类型
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseType.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseType.TypeName">
+            <summary>
+            
+            ColumnType：varchar(100), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseType.Sort">
+            <summary>
+            排序
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseType.CreateTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.KBConfig">
+            <summary>
+            课包名称配置
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfig.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfig.KBName">
+            <summary>
+            课包名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfig.Sort">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfig.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.Member">
+            <summary>
+            用户表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.Id">
+            <summary>
+            编号
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.Mobile">
+            <summary>
+            用户手机号码
+            ColumnType：varchar(36), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.OpenId">
+            <summary>
+            
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.HeadImg">
+            <summary>
+            微信头像
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.NickName">
+            <summary>
+            昵称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.RealName">
+            <summary>
+            用户姓名
+            ColumnType：varchar(255), IsNull：NO, Default：
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.StuName">
+            <summary>
+            学员姓名
+            ColumnType：varchar(255), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.StuBirthday">
+            <summary>
+            学生生日
+            ColumnType：varchar(100), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.StuImg">
+            <summary>
+            学生头像
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.StuSex">
+            <summary>
+            
+            ColumnType：char(2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.Member.CreateTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.MemberMessage">
+            <summary>
+            用户消息表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.Id">
+            <summary>
+            
+            ColumnType：int(10), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.MId">
+            <summary>
+            用户ID
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.Title">
+            <summary>
+            标题
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.MessageText">
+            <summary>
+            内容
+            ColumnType：varchar(4000), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.TargetType">
+            <summary>
+            跳转类型 0=文本，1=链接
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.TargetUrl">
+            <summary>
+            链接地址
+            ColumnType：varchar(100), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.IsRead">
+            <summary>
+            是否已读 false=未读，true=已读
+            ColumnType：bit(1), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessage.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.MemberOrderCourse">
+            <summary>
+            客户预约的课程表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.ScheduleId">
+            <summary>
+            课表Id
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.CourseOrderId">
+            <summary>
+            课程订单Id
+            ColumnType：int(10), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.OrderStatus">
+            <summary>
+            预约状态
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.MId">
+            <summary>
+            用户Id
+            ColumnType：int(10), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.OrderDate">
+            <summary>
+            约课日期
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.OrderStartTime">
+            <summary>
+            上课开始时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.OrderEndTime">
+            <summary>
+            上课结束时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.Remark">
+            <summary>
+            备注
+            ColumnType：varchar(500), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.FinishTime">
+            <summary>
+            完成时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.UseClassTime">
+            <summary>
+            使用课时
+            ColumnType：decimal(6,2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.RemainingClassTime">
+            <summary>
+            剩余课时
+            ColumnType：decimal(6,2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.NickName">
+            <summary>
+            
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.StuName">
+            <summary>
+            
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.Mobile">
+            <summary>
+            
+            ColumnType：varchar(36), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.CreateTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourse.WeekIndex">
+            <summary>
+            星期
+            ColumnType：int(2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.ScheduleBase">
+            <summary>
+            基础课程表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.ClassId">
+            <summary>
+            
+            ColumnType：int(10), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.ClassName">
+            <summary>
+            班级名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.CourseTypeId">
+            <summary>
+            课程类别Id
+            ColumnType：int(10), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.CourseId">
+            <summary>
+            课程Id
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.CourseName">
+            <summary>
+            课程名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.TeacherId">
+            <summary>
+            教师Id
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.TeacherName">
+            <summary>
+            教师姓名
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.EndTimeStr">
+            <summary>
+            上课结束时间
+            ColumnType：varchar(100), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.StartTimeStr">
+            <summary>
+            上课开始时间
+            ColumnType：varchar(100), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.OrderTimeLong">
+            <summary>
+            预约时间段
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.TotalSignUp">
+            <summary>
+            可以报名人数
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.SignUpNum">
+            <summary>
+            已报名人数
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.CourseTime">
+            <summary>
+            课时
+            ColumnType：decimal(6,2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.Sort">
+            <summary>
+            
+            ColumnType：int(10), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.WeekIndex">
+            <summary>
+            星期
+            ColumnType：int(2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.MaxMonthsAges">
+            <summary>
+            最大月龄
+            ColumnType：int(3), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.MinMonthsAges">
+            <summary>
+            最小月龄
+            ColumnType：int(3), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.EndTime">
+            <summary>
+            上课结束时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBase.StartTime">
+            <summary>
+            上课开始时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemAdmin">
+            <summary>
+            系统管理员
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.Id">
+            <summary>
+            ID
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.AuCode">
+            <summary>
+            后台用户CODE
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.RoCode">
+            <summary>
+            
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.AuName">
+            <summary>
+            后台用户名称
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.AuDesc">
+            <summary>
+            描述
+            ColumnType：text, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.Account">
+            <summary>
+            管理员账号
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.AuPost">
+            <summary>
+            职务
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.AuMobile">
+            <summary>
+            手机号
+            ColumnType：varchar(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.AuSex">
+            <summary>
+            性别
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.AuPower">
+            <summary>
+            -1超级管理员是否超级管理
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.Password">
+            <summary>
+            密码
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdmin.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemConfig">
+            <summary>
+            公司基础信息配置表
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.PName">
+            <summary>
+            省名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.CName">
+            <summary>
+            市名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.AName">
+            <summary>
+            区名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.PId">
+            <summary>
+            省编号
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.CId">
+            <summary>
+            市编号
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.AId">
+            <summary>
+            
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.Address">
+            <summary>
+            省市区地址
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.AddressDetail">
+            <summary>
+            详细地址
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.Longitude">
+            <summary>
+            经度
+            ColumnType：double(11,6), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.Latitude">
+            <summary>
+            纬度
+            ColumnType：double(11,6), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.CompanyMobile">
+            <summary>
+            公司电话
+            ColumnType：varchar(36), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.OtherMobile">
+            <summary>
+            其他电话
+            ColumnType：varchar(36), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfig.CompanyName">
+            <summary>
+            公司名称
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemMenus">
+            <summary>
+            系统菜单
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.MuCode">
+            <summary>
+            菜单CODE
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.PmuCode">
+            <summary>
+            父节点菜单
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.MuName">
+            <summary>
+            菜单名称
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.MuType">
+            <summary>
+            0内容，1系统
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.IsChild">
+            <summary>
+            是否子节点
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.MuUrl">
+            <summary>
+            跳转链接
+            ColumnType：varchar(225), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.MuIcon">
+            <summary>
+            图标
+            ColumnType：varchar(225), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.MuDesc">
+            <summary>
+            功能描述
+            ColumnType：varchar(225), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.Sort">
+            <summary>
+            排序
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenus.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemPower">
+            <summary>
+            角色权限
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.PwCode">
+            <summary>
+            
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.RoCode">
+            <summary>
+            部门
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.MuCode">
+            <summary>
+            菜单
+            ColumnType：text, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.PwDelete">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.PwSelect">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.PwUpdate">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.PwInsert">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPower.CreateTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemRoles">
+            <summary>
+            系统角色
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRoles.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRoles.RoCode">
+            <summary>
+            
+            ColumnType：varchar(50), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRoles.RoName">
+            <summary>
+            
+            ColumnType：varchar(225), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRoles.Sort">
+            <summary>
+            
+            ColumnType：int(11), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRoles.CreateTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.TeacherBase">
+            <summary>
+            教师基础
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBase.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBase.TeacherName">
+            <summary>
+            
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBase.TeacherMobile">
+            <summary>
+            教师电话
+            ColumnType：varchar(36), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBase.Remark">
+            <summary>
+            描述
+            ColumnType：varchar(1000), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBase.Account">
+            <summary>
+            账号
+            ColumnType：varchar(36), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBase.Password">
+            <summary>
+            密码
+            ColumnType：varchar(100), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBase.CreateTime">
+            <summary>
+            创建时间
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.VerificationCode">
+            <summary>
+            手机验证短信
+            更新时间：2020-09-07 16:00:12
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCode.Id">
+            <summary>
+            
+            ColumnType：int(11), IsNull：NO, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCode.VCode">
+            <summary>
+            验证码
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCode.VMobile">
+            <summary>
+            手机号
+            ColumnType：varchar(255), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCode.IsUsed">
+            <summary>
+            是否有效
+            ColumnType：bit(2), IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCode.CreateTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCode.OutTime">
+            <summary>
+            
+            ColumnType：datetime, IsNull：YES, Default：NULL
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.ClassBaseModel">
+            <summary>
+            基础班级表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBaseModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBaseModel.ClassName">
+            <summary>
+            班级名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBaseModel.TeacherId">
+            <summary>
+            教师ID
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBaseModel.TeacherName">
+            <summary>
+            教师名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBaseModel.Sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ClassBaseModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseBaseModel">
+            <summary>
+            基础课程表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBaseModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBaseModel.CourseTypeId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBaseModel.CourseName">
+            <summary>
+            课程名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBaseModel.CourseTime">
+            <summary>
+            课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBaseModel.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBaseModel.MaxMonthsAges">
+            <summary>
+            最大月龄
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseBaseModel.MinMonthsAges">
+            <summary>
+            最小月龄
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseOrderModel">
+            <summary>
+            课程包表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.CourseOrderName">
+            <summary>
+            课程包名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.OrderType">
+            <summary>
+            0=通用课包，1=指定课包
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.MId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.MMobile">
+            <summary>
+            用户电话
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.StuName">
+            <summary>
+            学员姓名
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.FinishNum">
+            <summary>
+            完成次数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.NoFinishNum">
+            <summary>
+            没有完成次数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.TotalLeaveNum">
+            <summary>
+            可以请假的次数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.LeaveNum">
+            <summary>
+            已经请假次数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.EffectiveTiem">
+            <summary>
+            有效时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.AttachUrl">
+            <summary>
+            附件地址
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.TotalClassTime">
+            <summary>
+            总课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderModel.RemainingClassTime">
+            <summary>
+            剩余课时
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseOrderItemModel">
+            <summary>
+            课程包_跟随的课程
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItemModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItemModel.CourseOrderId">
+            <summary>
+            课程包Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItemModel.MId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItemModel.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItemModel.CourseName">
+            <summary>
+            课程name
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseOrderItemModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.CourseTypeModel">
+            <summary>
+            课程类型
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseTypeModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseTypeModel.TypeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseTypeModel.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.CourseTypeModel.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.KBConfigModel">
+            <summary>
+            课包名称配置
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfigModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfigModel.KBName">
+            <summary>
+            课包名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfigModel.Sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.KBConfigModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.MemberModel">
+            <summary>
+            用户表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.Id">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.Mobile">
+            <summary>
+            用户手机号码
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.OpenId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.HeadImg">
+            <summary>
+            微信头像
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.RealName">
+            <summary>
+            用户姓名
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.StuName">
+            <summary>
+            学员姓名
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.StuBirthday">
+            <summary>
+            学生生日
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.StuImg">
+            <summary>
+            学生头像
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.StuSex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberModel.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.MemberMessageModel">
+            <summary>
+            用户消息表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.MId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.MessageText">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.TargetType">
+            <summary>
+            跳转类型 0=文本，1=链接
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.TargetUrl">
+            <summary>
+            链接地址
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.IsRead">
+            <summary>
+            是否已读 false=未读，true=已读
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberMessageModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.MemberOrderCourseModel">
+            <summary>
+            客户预约的课程表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.ScheduleId">
+            <summary>
+            课表Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.CourseOrderId">
+            <summary>
+            课程订单Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.OrderStatus">
+            <summary>
+            预约状态
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.MId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.OrderDate">
+            <summary>
+            约课日期
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.OrderStartTime">
+            <summary>
+            上课开始时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.OrderEndTime">
+            <summary>
+            上课结束时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.FinishTime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.UseClassTime">
+            <summary>
+            使用课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.RemainingClassTime">
+            <summary>
+            剩余课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.NickName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.StuName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.Mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.MemberOrderCourseModel.WeekIndex">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.ScheduleBaseModel">
+            <summary>
+            基础课程表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.ClassId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.ClassName">
+            <summary>
+            班级名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.CourseTypeId">
+            <summary>
+            课程类别Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.CourseId">
+            <summary>
+            课程Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.CourseName">
+            <summary>
+            课程名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.TeacherId">
+            <summary>
+            教师Id
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.TeacherName">
+            <summary>
+            教师姓名
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.EndTimeStr">
+            <summary>
+            上课结束时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.StartTimeStr">
+            <summary>
+            上课开始时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.OrderTimeLong">
+            <summary>
+            预约时间段
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.TotalSignUp">
+            <summary>
+            可以报名人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.SignUpNum">
+            <summary>
+            已报名人数
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.CourseTime">
+            <summary>
+            课时
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.Sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.WeekIndex">
+            <summary>
+            星期
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.MaxMonthsAges">
+            <summary>
+            最大月龄
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.MinMonthsAges">
+            <summary>
+            最小月龄
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.EndTime">
+            <summary>
+            上课结束时间
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.ScheduleBaseModel.StartTime">
+            <summary>
+            上课开始时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemAdminModel">
+            <summary>
+            系统管理员
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.AuCode">
+            <summary>
+            后台用户CODE
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.RoCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.AuName">
+            <summary>
+            后台用户名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.AuDesc">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.Account">
+            <summary>
+            管理员账号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.AuPost">
+            <summary>
+            职务
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.AuMobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.AuSex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.AuPower">
+            <summary>
+            -1超级管理员是否超级管理
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemAdminModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemConfigModel">
+            <summary>
+            公司基础信息配置表
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.PName">
+            <summary>
+            省名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.CName">
+            <summary>
+            市名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.AName">
+            <summary>
+            区名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.PId">
+            <summary>
+            省编号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.CId">
+            <summary>
+            市编号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.AId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.Address">
+            <summary>
+            省市区地址
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.AddressDetail">
+            <summary>
+            详细地址
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.Longitude">
+            <summary>
+            经度
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.Latitude">
+            <summary>
+            纬度
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.CompanyMobile">
+            <summary>
+            公司电话
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.OtherMobile">
+            <summary>
+            其他电话
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemConfigModel.CompanyName">
+            <summary>
+            公司名称
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemMenusModel">
+            <summary>
+            系统菜单
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.MuCode">
+            <summary>
+            菜单CODE
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.PmuCode">
+            <summary>
+            父节点菜单
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.MuName">
+            <summary>
+            菜单名称
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.MuType">
+            <summary>
+            0内容，1系统
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.IsChild">
+            <summary>
+            是否子节点
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.MuUrl">
+            <summary>
+            跳转链接
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.MuIcon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.MuDesc">
+            <summary>
+            功能描述
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.Sort">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemMenusModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemPowerModel">
+            <summary>
+            角色权限
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.PwCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.RoCode">
+            <summary>
+            部门
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.MuCode">
+            <summary>
+            菜单
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.PwDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.PwSelect">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.PwUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.PwInsert">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemPowerModel.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.SystemRolesModel">
+            <summary>
+            系统角色
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRolesModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRolesModel.RoCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRolesModel.RoName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRolesModel.Sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.SystemRolesModel.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.TeacherBaseModel">
+            <summary>
+            教师基础
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBaseModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBaseModel.TeacherName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBaseModel.TeacherMobile">
+            <summary>
+            教师电话
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBaseModel.Remark">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBaseModel.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBaseModel.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.TeacherBaseModel.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Mammothcode.Model.VerificationCodeModel">
+            <summary>
+            手机验证短信
+            更新时间：2020-09-07 16:00:15
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCodeModel.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCodeModel.VCode">
+            <summary>
+            验证码
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCodeModel.VMobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCodeModel.IsUsed">
+            <summary>
+            是否有效
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCodeModel.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Mammothcode.Model.VerificationCodeModel.OutTime">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

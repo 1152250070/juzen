@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mammothcode.AdminApi</name>
+    </assembly>
+    <members>
+        <member name="T:Mammothcode.AdminApi.Controllers.AdminController">
+             <summary>
+            登录
+             </summary>
+        </member>
+        <member name="T:Mammothcode.AdminApi.Controllers.ConfigController">
+            <summary>
+            系統配置
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.ConfigController.GetQiniuUploadToken">
+            <summary>
+            七牛云token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.ConfigController.GetSystemConfig">
+            <summary>
+            获取配置项
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.ConfigController.UpdateSystemConfig(Mammothcode.Model.SystemConfigModel)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.ConfigController.AddKBConfig(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            新增课包名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.ConfigController.UpdateKBConfig(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            修改课包名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.ConfigController.DeleteKBConfig(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            删除课包名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.ConfigController.GetKBNameList(Mammothcode.Model.KBConfigModel)">
+            <summary>
+            获取课包名称列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.AdminApi.Controllers.CourseController">
+            <summary>
+            课程管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.AddTeacherBase(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            新增教师
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.UpdateTeacherBase(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            修改教师
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.DeleteTeacherBase(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            删除教师
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.GetTeacherBaseList(Mammothcode.Model.TeacherBaseModel)">
+            <summary>
+            获取教师列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.AddClassBase(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            新增班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.UpdateClassBase(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            修改班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.DeleteClassBase(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            删除班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.GetClassBaseList(Mammothcode.Model.ClassBaseModel)">
+            <summary>
+            获取班级列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.AddCourseType(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            新增课程分类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.UpdateCourseType(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            修改课程分类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.DeleteCourseType(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            删除课程分类
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.GetCourseTypeList(Mammothcode.Model.CourseTypeModel)">
+            <summary>
+            获取课程分类列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.AddCourseBase(Mammothcode.Model.CourseBaseModel)">
+            <summary>
+            新增课程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.UpdateCourseBase(Mammothcode.Model.CourseBaseModel)">
+            <summary>
+            修改课程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.DeleteCourseBase(Mammothcode.Model.CourseBaseModel)">
+            <summary>
+            删除课程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.GetCourseBaseList(Mammothcode.AdminService.Models.GetCourseBaseModel)">
+            <summary>
+            获取课程列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.AddScheduleBase(Mammothcode.AdminService.Models.AddScheduleBaseModel)">
+            <summary>
+            新增课表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.UpdateScheduleBase(Mammothcode.AdminService.Models.AddScheduleBaseModel)">
+            <summary>
+            修改课表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.DeleteScheduleBase(Mammothcode.Model.ScheduleBaseModel)">
+            <summary>
+            删除课表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.CourseController.GetScheduleBaseList(Mammothcode.Model.ScheduleBaseModel)">
+            <summary>
+            获取课表列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.AdminApi.Controllers.MemberController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.GetMemberList(Mammothcode.Model.MemberModel)">
+            <summary>
+            获取用户列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.GetMemberSingle(Mammothcode.Model.MemberModel)">
+            <summary>
+            获取用户详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.AddMember(Mammothcode.Model.MemberModel)">
+            <summary>
+            添加员工
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.UpdateMember(Mammothcode.Model.MemberModel)">
+            <summary>
+            更新员工信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.DelMember(Mammothcode.Model.MemberModel)">
+            <summary>
+            删除员工
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.AddCourseOrder(Mammothcode.AdminService.Models.AddCourseOrderModel)">
+            <summary>
+            新增用户课程包
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.UpdateCourseOrder(Mammothcode.Model.CourseOrderModel)">
+            <summary>
+            修改用户课程包
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.DeleteCourseOrder(Mammothcode.Model.CourseOrderModel)">
+            <summary>
+            删除用户课程包
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.GetCourseOrderList(Mammothcode.AdminService.Models.GetCourseOrderModel)">
+            <summary>
+            获取用户课程包列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.AddCourseOrderItem(Mammothcode.Model.CourseOrderItemModel)">
+            <summary>
+            新增课程包中课程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.UpdateCourseOrderItem(Mammothcode.Model.CourseOrderItemModel)">
+            <summary>
+            修改课程包中课程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.DeleteCourseOrderItem(Mammothcode.Model.CourseOrderItemModel)">
+            <summary>
+            删除课程包中课程
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.GetCourseOrderItemList(Mammothcode.AdminService.Models.GetCourseOrderItemModel)">
+            <summary>
+            获取课程包中课程列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.MemberController.GetMemberOrderCourseList(Mammothcode.AdminService.Models.GetMemCourseModel)">
+            <summary>
+            获取客户预约课程列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.AdminApi.Controllers.TeacherController">
+            <summary>
+            教师PC端管理
+            </summary>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.TeacherController.MemberLogin(Mammothcode.AdminService.Models.MemberLogoModel)">
+            <summary>
+            用户登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.TeacherController.CheckLogin(Mammothcode.Service.CheckLoginModel)">
+            <summary>
+            验证Token是否失效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.TeacherController.GetTeachClassList(Mammothcode.AdminService.Models.GetTeachClassModel)">
+            <summary>
+             获取我任课班级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.TeacherController.GetTeacherScheduleBaseList(Mammothcode.AdminService.Models.GetTeacherScheduleModel)">
+            <summary>
+             获取课表列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.TeacherController.GetMemberOrderCourseList(Mammothcode.AdminService.Models.GetMemCourseModel)">
+            <summary>
+            获取客户预约课程列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Mammothcode.AdminApi.Controllers.TeacherController.SetMemOrderCourse(Mammothcode.AdminService.Models.SetMemOrderCourseModel)">
+            <summary>
+            教师操作用户的预约课程--点名
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Mammothcode.AdminApi.Controllers.UploadController">
+            <summary>
+            图片上传控制器
+            </summary>
+        </member>
+        <member name="T:Mammothcode.AdminApi.Controllers.UploadModel">
+            <summary>
+            上传文件请求参数
+            </summary>
+        </member>
+    </members>
+</doc>

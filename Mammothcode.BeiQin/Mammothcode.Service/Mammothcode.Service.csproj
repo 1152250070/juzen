@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="NLog.Config" Version="4.6.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mammothcode.Library\Mammothcode.Library.csproj" />
+    <ProjectReference Include="..\Mammothcode.Model\Mammothcode.Model.csproj" />
+    <ProjectReference Include="..\Mammothcode.Wechat\Mammothcode.Wechat.csproj" />
+  </ItemGroup>
+
+</Project>

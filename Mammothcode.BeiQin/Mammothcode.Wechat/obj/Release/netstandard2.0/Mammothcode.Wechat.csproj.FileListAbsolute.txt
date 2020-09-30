@@ -1,0 +1,8 @@
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\bin\Release\netstandard2.0\Mammothcode.Wechat.deps.json
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\bin\Release\netstandard2.0\Mammothcode.Wechat.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\bin\Release\netstandard2.0\Mammothcode.Wechat.pdb
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\obj\Release\netstandard2.0\Mammothcode.Wechat.csprojAssemblyReference.cache
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\obj\Release\netstandard2.0\Mammothcode.Wechat.AssemblyInfoInputs.cache
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\obj\Release\netstandard2.0\Mammothcode.Wechat.AssemblyInfo.cs
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\obj\Release\netstandard2.0\Mammothcode.Wechat.dll
+D:\mammothcode.2020\Mammothcode.BeiQin\Mammothcode.Wechat\obj\Release\netstandard2.0\Mammothcode.Wechat.pdb

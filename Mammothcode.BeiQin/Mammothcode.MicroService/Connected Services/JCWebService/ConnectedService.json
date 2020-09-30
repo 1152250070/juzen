@@ -1,0 +1,66 @@
+﻿//{
+//  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+//  "Version": "15.0.30730.948",
+//  //"ExtendedData": {
+//  //  "inputs": [
+//  //    "http://supplier.mh-chine.com:8007/WebServiceForWMS_WEIXIJC.asmx"
+//  //  ],
+//  //  "collectionTypes": [
+//  //    "System.Array",
+//  //    "System.Collections.Generic.Dictionary`2"
+//  //  ],
+//  //  "namespaceMappings": [
+//  //    "*, JCWebService"
+//  //  ],
+//  //  "targetFramework": "netstandard2.0",
+//  //  "typeReuseMode": "None"
+//  //},
+
+//  "ExtendedData": {
+//    "Uri": "http://supplier.mh-chine.com:8007/WebServiceForWMS_WEIXIJC.asmx", // webservice 地址
+//    "Namespace": "JCWebService",
+//    "SelectedAccessLevelForGeneratedClass": "Public",
+//    "GenerateMessageContract": false,
+//    "ReuseTypesinReferencedAssemblies": true,
+//    "ReuseTypesinAllReferencedAssemblies": true,
+//    "CollectionTypeReference": {
+//      "Item1": "System.Array",
+//      "Item2": "System.Runtime.dll"
+//    },
+//    "DictionaryCollectionTypeReference": {
+//      "Item1": "System.Collections.Generic.Dictionary`2",
+//      "Item2": "System.Collections.dll"
+//    },
+//    "CheckedReferencedAssemblies": [],
+//    "InstanceId": null,
+//    "Name": "YangPuInfoQuery",
+//    "Metadata": {}
+//  }
+//}
+{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.30730.948",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "Uri": "http://supplier.mh-chine.com:8007/WebServiceForWMS_WEIXIJC.asmx", // webservice 地址
+    "Namespace": "JCWebService",
+    "SelectedAccessLevelForGeneratedClass": "Public",
+    "GenerateMessageContract": false,
+    "ReuseTypesinReferencedAssemblies": true,
+    "ReuseTypesinAllReferencedAssemblies": true,
+    "CollectionTypeReference": {
+      "Item1": "System.Array",
+      "Item2": "System.Runtime.dll"
+    },
+    "DictionaryCollectionTypeReference": {
+      "Item1": "System.Collections.Generic.Dictionary`2",
+      "Item2": "System.Collections.dll"
+    },
+    "CheckedReferencedAssemblies": [],
+    "InstanceId": null,
+    "Name": "YangPuInfoQuery",
+    "Metadata": {}
+  }
+}

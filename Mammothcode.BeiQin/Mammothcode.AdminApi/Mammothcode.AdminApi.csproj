@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\mammothcode.2019.01\Mammothcode.OrderClass\Mammothcode.AdminApi\Mammothcode.AdminApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\AgentController.cs" />
+    <Compile Remove="Controllers\CommonController.cs" />
+    <Compile Remove="Controllers\InformationController.cs" />
+    <Compile Remove="Controllers\TeacherController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.Common" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
+    <PackageReference Include="MySql.Data" Version="8.0.17" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mammothcode.AdminService\Mammothcode.AdminService.csproj" />
+    <ProjectReference Include="..\Mammothcode.Service\Mammothcode.Service.csproj" />
+  </ItemGroup>
+
+</Project>
